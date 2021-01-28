@@ -1,23 +1,33 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './Header'
+import Form from './Form/Form'
+import Features from './Features/Features'
+import Footer from './Footer'
+import Foundation from './Foundation'
+import Usp from './Usp'
+import Topperspeak from './Topperspeak'
+import Register from './Register'
+import Onlinesupport from './Onlinesupport/Onlinesupport'
+import { Switch, Route, Redirect, BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" >
+     
+      <BrowserRouter>
+      <Header/>
+      
+      <Switch>
+        <Route exact path="/" component={Form} />
+        <Route exact path="/register" component={Register} />
+        
+      </Switch>
+    </BrowserRouter>
+      <Footer/>
+
+      
+        
     </div>
   );
 }
