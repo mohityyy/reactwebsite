@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="App" >
      
-      {/* <BrowserRouter>
+      <BrowserRouter>
       <Header/>
       
       <Switch>
@@ -23,14 +23,9 @@ function App() {
         <Route exact path="/register" component={Register} />
         
       </Switch>
-    </BrowserRouter> */}
-    <Header/>
-    <Features/>
-      <Foundation/>
-      <Onlinesupport/>
-      <Usp/>
-      <Topperspeak/>
       <Footer/>
+    </BrowserRouter>
+      
 
       
         
