@@ -19,7 +19,7 @@ function App() {
       <Header/>
       
       <Switch>
-        <Route exact path="/" component={Form} />
+        <Route exact path="/reactwebsite" component={Form} />
         <Route exact path="/register" component={Register} />
         
       </Switch>
